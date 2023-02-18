@@ -24,9 +24,4 @@ public class NotificationController {
         simpleMessagingTemplate.convertAndSend("/topic/broadcast", message);
         return ResponseEntity.status(HttpStatus.OK).build();
     }
-
-    @MessageMapping("/message")
-    public void handleMessageFromWebSocket(MessageDTO message){
-
-    }
 }
